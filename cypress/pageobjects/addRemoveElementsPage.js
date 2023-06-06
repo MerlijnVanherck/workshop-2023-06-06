@@ -1,4 +1,10 @@
 class AddRemoveElementsPage {
+  path = 'add_remove_elements/';
+  
+  visit() {
+    cy.visit(this.path);
+  }
+
   elements = {
     addElementButton: () => cy.get('#content > .example > button'),
     deleteButton: () => cy.get('#elements').find('button'),

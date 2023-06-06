@@ -2,8 +2,8 @@ import AddRemoveElementsPage from "../pageobjects/addRemoveElementsPage"
 
 describe('Add/Remove Elements', () => {
   it('Add and remove buttons', () => {
-    cy.visit('add_remove_elements/');
     const page = new AddRemoveElementsPage();
+    page.visit();
 
     page.verifyNumberOfDeleteButtons(0);
 
